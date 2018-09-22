@@ -30,6 +30,10 @@
     text-align: center;
 }
 
+.heading-primary {
+    line-height: 1.7;
+}
+
 .heading-primary-main {
     display: block;
     font-size: 2rem;
@@ -37,6 +41,7 @@
 }
 .heading-primary-sub {
     display: block;
-    font-size: 0.75rem;
-    letter-spacing: 9px;
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    
 }
