@@ -1,7 +1,6 @@
-.about-section {
-    //    height: 100vh;
-    background-color: $green;
+.about-info-container {
     padding: 30px 20px;
+    background-color: $green;
 }
 
 .about-img-container {
@@ -43,6 +42,37 @@
     font-size: 0.65rem;
 }
 
+.about-contact-container {
+    color: #000;
+    font-family: $headersFont;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.about-contact-box {
+    border: solid 3px #000;
+    padding: 5% 5%;
+    margin: 10% 15%;
+    text-align: center;
+    letter-spacing: 1.8px;
+}
+
+.question {
+    display: block;
+    margin: 10px 0;
+}
+
+.contact-link:link,
+.contact-link:visited {
+    text-decoration: none;
+    color: $green;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+.contact-link:hover {
+    color: $darkBlue;
+}
+
 @media only screen and (min-width: 767px) {
     .about-img-container {
         margin: 25px 0;
@@ -69,6 +99,17 @@
         font-size: 0.9rem;
         line-height: 1.7;
         letter-spacing: 0.8px;
-
+    }
+    
+    .about-contact-container {
+    font-size: 1.2rem;
+}
+    .about-contact-box {
+    padding: 3% 3%;
+    margin: 8% 20%;
+}
+    .contact-link:link,
+.contact-link:visited {
+    font-size: 1.3rem;
     }
 }
