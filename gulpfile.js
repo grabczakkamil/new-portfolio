@@ -1,12 +1,13 @@
-const gulp         = require('gulp');
-const sass         = require('gulp-sass');
-const sourcemaps   = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
-const browserSync  = require('browser-sync');
-const plumber      = require('gulp-plumber');
+const browserSync = require('browser-sync');
+const plumber = require('gulp-plumber');
 
 
 gulp.task('browser-sync', () => {
+    'use strict';
     browserSync.init({
         server: {
             baseDir: 'public',
@@ -19,6 +20,7 @@ gulp.task('browser-sync', () => {
 
     gulp.watch('src/sass/**/*.scss', ['sass']);
     gulp.watch('src/js/**/*.*', ['js']);
+    gulp.watch('src/img/**/*.*', ['img']);
     gulp.watch(['./src/html/**/*.html'], ['html'])
         .on('change', browserSync.reload);
 });
@@ -49,11 +51,19 @@ gulp.task('js', () => {
 
 gulp.task('html', () => {
     gulp.src(['src/html/*.html'], {
-        base: 'src/html/'
-    })
-    .pipe(plumber())
-    .pipe(gulp.dest('./public/'));
+            base: 'src/html/'
+        })
+        .pipe(plumber())
+        .pipe(gulp.dest('./public/'));
 });
 
 
-gulp.task('default', ['sass', 'js', 'html', 'browser-sync',]);
+gulp.task('img', () => {
+    gulp.src(['src/img/*.jpg'], {
+        base: 'src/img/'
+    })
+    .pipe(plumber())
+    .pipe(gulp.dest('./public/img/'));
+});
+
+gulp.task('default', ['sass', 'js', 'html', 'browser-sync', 'img']);
