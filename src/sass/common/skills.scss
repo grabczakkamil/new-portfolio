@@ -1,0 +1,47 @@
+.skills {
+    background-color: $red;
+}
+
+.pyramid-text {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5% 0;
+    font-family: $headersFont;
+}
+
+.skills-pyramid {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0, 5% 100%, 95% 100%);
+}
+
+.pyramid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pyramid-top {
+    background-color: $yellow;
+    height: 70%;
+    color: $orange;
+    flex-direction: column;
+}
+
+.pyramid-bottom {
+    display: flex;
+    height: 30%;
+    background-color: $orange;
+    color: $yellow;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 6% 0 6%;
+}
+
+.pyramid-bottom span {
+    margin: 0 2% 0 2%;
+}
