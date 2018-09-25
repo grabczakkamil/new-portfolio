@@ -1,13 +1,13 @@
 .skills {
-    background-color: $red;
-    height: 80vh;
+    background-color: $orange;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .skills-container {
-    height: 90%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -15,8 +15,8 @@
 }
 
 .skills-box {
-    border: solid 3px $orange;
-    height: 40%;
+    border: solid 0.3rem $yellow;
+    height: 45%;
     width: 90%;
     position: relative;
 }
@@ -29,7 +29,7 @@
 .box-foreground {
     width: 95%;
     height: 95%;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto auto;
@@ -48,6 +48,7 @@
 .top-box .tech-item:nth-of-type(3) {
     grid-column: 3;
     grid-row: 3;
+    text-align: right;
 }
 .top-box .tech-item:nth-of-type(4) {
     grid-column: 3;
@@ -91,9 +92,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: $orange;
+    color: $yellow;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4.8rem;
     opacity: 0.4;
     z-index: 1;
 }
