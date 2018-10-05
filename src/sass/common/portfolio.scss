@@ -1,5 +1,56 @@
 .portfolio {
+    height: 180vh;
+    background-color: $red;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-box {
+    width: 100%;
+    height: 25%;
+    margin: 1rem 1rem;
+    background-color: $red;
+}
+
+.box-1 {
+    background-image: url(../img/laptop-formularze.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-2 {
+    background-image: url(../img/laptop-portfolio.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-3 {
+    background-image: url(../img/laptop-uklad-okresowy.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 767px) {
+    .portfolio {
     height: 100vh;
-     background-color: $red;
-    margin: 0;
+}
+    .portfolio-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .portfolio-box {
+        width: 30%;
+        height: 45%;
+    }
 }
