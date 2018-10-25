@@ -8,3 +8,9 @@ $lightBlue: #60b9d4;
 $basicFont: 'Raleway', sans-serif;
 $headersFont: 'Montserrat', sans-serif;
 $logoFont: 'Monoton', sans-serif;
+
+@mixin basicFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

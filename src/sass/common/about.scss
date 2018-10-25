@@ -3,9 +3,7 @@
     background-color: $green;
 
     .about-img-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include basicFlex;
 
         .about-img-box {
             height: 10rem;
@@ -20,9 +18,8 @@
         }
     }
     .question-answer-container {
-        display: flex;
+        @include basicFlex;
         flex-direction: column;
-        align-items: center;
 
         .about-box {
             text-transform: uppercase;

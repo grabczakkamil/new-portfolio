@@ -2,10 +2,8 @@
     background-color: $darkBlue;
     height: 15vh;
     font-family: $logoFont;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    @include basicFlex;
 
     .logo-item {
         font-size: 4.5rem;
@@ -20,10 +18,8 @@
     background-color: $blue;
     height: 50vh;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    @include basicFlex;
     
     .heading-primary {
         line-height: 1.7;
